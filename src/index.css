@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles for pagination */
+.pagination {
+  @apply flex justify-center gap-2;
+}
+
+.pagination-item {
+  @apply px-3 py-1 rounded bg-gray-800 text-white hover:bg-cyan-400 hover:text-gray-900 transition-colors;
+}
+
+.pagination-item.active {
+  @apply bg-cyan-400 text-gray-900;
+}
+
+.pagination-item.disabled {
+  @apply opacity-50 cursor-not-allowed hover:bg-gray-800 hover:text-white;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #14161A;
+}
